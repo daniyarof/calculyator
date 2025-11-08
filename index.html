@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Simple Calculator</title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <div class="calculator" role="main" aria-label="Simple Calculator">
+    <h2> Calculator</h2>
+    <input
+      type="number"
+      id="num1"
+      placeholder="Enter first number"
+      aria-label="First number"
+    />
+    <input
+      type="number"
+      id="num2"
+      placeholder="Enter second number" 
+      aria-label="Second number"
+    />
+
+    <div class="buttons">
+      <button class="operation" onclick="calculate('+')" aria-label="Add">+</button>
+      <button class="operation" onclick="calculate('-')" aria-label="Subtract">- </button>
+      <button class="operation" onclick="calculate('/')" aria-label="Divide">/ </button>
+      <button class="operation" onclick="calculate('*')" aria-label="Multiply">*</button>
+      <button class="operation" onclick="calculateRoot()" aria-label="Square root">&radic; √</button>
+      <button class="operation" onclick="findMin()" aria-label="Minimum">Min</button>
+      <button class="operation" onclick="findMax()" aria-label="Maximum">Max</button>
+      <button class="operation" onclick="calculatePercent()" aria-label="Percent">%</button>
+      <button class="operation" onclick="calculatePower()" aria-label="Power">^ daraja</button>
+      <button class="clear" onclick="clearAll()" aria-label="Clear inputs and result">ochrish</button>
+    </div>
+
+    <div class="result" id="result" aria-live="polite"></div>
+  </div>
+
+  <script src="app.js">
+
+  </script>
+</body>
+</html>
+
+
+
